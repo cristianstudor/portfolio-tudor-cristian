@@ -72,7 +72,7 @@
             <p class="about-wrapper__info-text">
               I am a self-taught developer with a good learning ability and the desire to improve.
               I decided to learn programming by myself, from scratch, because I wanted to do this for a long time.
-              I've specialized in JavaScript and React.
+              I've specialized in JavaScript, React and Express.
               My aim is to have good communication and solve real problems without complicating things.
             </p>
             <span class="d-flex mt-3">
@@ -184,6 +184,45 @@
         </div>
         <!-- /END Project -->
 
+        <!-- Notice: each .row is a project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text load-hidden">
+              <h3 class="project-wrapper__text-title">Space Launches API</h3>
+              <div>
+                <p class="mb-4">
+                  This is a back-end RESTful API that serves a front-end application that can launch space missions. 
+                  The API is made in Express and it's connected to a MongoDB database. 
+                  Every time someone launches a mission in the front-end, the mission data is stored in the database. 
+                  For the destination planet input in the front-end, the API parses a CSV file with planets data discovered by NASA and filters the planets that may be habitable. 
+                  It also uses a paginated SpaceX API to get all the historical/ upcoming rocket launches scheduled by SpaceX. 
+                  These launches are also saved in the database so that they can be listed in the front-end. 
+                  The Server API is deployed to production as a Docker Container that is run in a Amazon EC2 instance.
+                </p>
+              </div>
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
+                href="http://16.16.194.197:8000/">
+                See Live
+              </a>
+              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
+                href="https://github.com/cristianstudor/nasa-project">
+                Source code
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image load-hidden">
+              <a rel="noreferrer" href="http://16.16.194.197:8000/" target="_blank">
+                <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                  class="thumbnail rounded js-tilt">
+                  <img alt="Project Image" class="img-fluid" src="assets/nasa-project-front.png" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
+
   </section>
   <!-- /END Project Section-->
 
@@ -223,10 +262,10 @@
       <hr />
 
       <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
-      <p class="footer__text">
+      <!-- <p class="footer__text">
         © 2021 - Template developed by
         <a rel="noreferrer" href="https://github.com/cobidev" target="_blank">Jacobo Martínez</a>
-      </p>
+      </p> -->
     </div>
   </footer>
   <!-- /END Footer Section -->
