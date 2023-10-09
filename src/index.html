@@ -72,7 +72,7 @@
             <p class="about-wrapper__info-text">
               I am a self-taught developer with a good learning ability and the desire to improve.
               I decided to learn programming by myself, from scratch, because I wanted to do this for a long time.
-              I've specialized in JavaScript, React and Express.
+              I've specialized in JavaScript, Angular, React and Express.
               My aim is to have good communication and solve real problems without complicating things.
             </p>
             <span class="d-flex mt-3">
@@ -97,12 +97,50 @@
         <div class="row">
           <div class="col-lg-4 col-sm-12">
             <div class="project-wrapper__text load-hidden">
+              <h3 class="project-wrapper__text-title">Clips Share</h3>
+              <div>
+                <p class="mb-4">
+                  This is a video sharing application. It has a database implemented with Firebase
+                  that stores the users data and the videos uploaded by the users. 
+                  After creating a new account, users are able to upload their own videos and to manage them.
+                  During the process of uploading a video, the user can choose a thumbnail from a selection of screenshoots
+                  generated using a WebAssembly / JavaScript port of FFmpeg.
+                  The website is hosted on Vercel and was made using Angular and RxJS.
+                </p>
+              </div>
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
+                href="https://clips-share-app.vercel.app/">
+                See Live
+              </a>
+              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
+                href="https://github.com/cristianstudor/clips-share">
+                Source Code
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image load-hidden">
+              <a rel="noreferrer" href="https://clips-share-app.vercel.app/" target="_blank">
+                <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                  class="thumbnail rounded js-tilt">
+                  <img alt="Project Image" class="img-fluid" src="assets/clips-share-front.png" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
+
+        <!-- Notice: each .row is a project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text load-hidden">
               <h3 class="project-wrapper__text-title">Clothing Store</h3>
               <div>
                 <p class="mb-4">
                   This app is a clothing store. It has a database implemented with Firebase
-                  and a payment method implemented with Stripe. The database stores app
-                  data and users data. After creating a new account, users can access their
+                  and a payment method implemented with Stripe. The database stores ther app
+                  and users data. After creating a new account, users can access their
                   profile, where they can modify their address and see their orders history.
                   Items can be added to the cart. The shopping cart data is saved inside
                   the local storage so that it can be accessed later.
@@ -149,12 +187,12 @@
                   It uses an API from a deep learning AI platform named Clarifai.
                   After making an account, you can copy-paste an image link containing a jpg photo and
                   the app with the help from the API will detect faces in your picture.
-                  The app is posted on Render as two projects, one for the front-end and one for the back-end.
-                  The back-end part has access to a database stored in a PostgreSQL instance on Render.
+                  The front-end part of the app is hosted on Render and the back-end is hosted on Fly.io.
+                  The back-end part has access to a database stored in a PostgreSQL instance on Fly.
                   The database has two tables created, one for storing users and one for storing login info
-                  where the passwords are stored encrypted. <span style="font-style: italic; font-weight: bold;">It
-                    takes a few seconds for the website to access the back-end after the first request, because Render
-                    disables the back-end when not in use!</span>
+                  where the passwords are stored encrypted. 
+                  <span style="font-style: italic; font-weight: bold;"
+                    >It takes a few seconds for the website to access the back-end after the first request, because Fly disables the back-end when not in use!</span>
                 </p>
               </div>
               <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
@@ -197,11 +235,11 @@
                   For the destination planet input in the front-end, the API parses a CSV file with planets data discovered by NASA and filters the planets that may be habitable. 
                   It also uses a paginated SpaceX API to get all the historical/ upcoming rocket launches scheduled by SpaceX. 
                   These launches are also saved in the database so that they can be listed in the front-end. 
-                  The Server API is deployed to production as a Docker Container that is run in a Amazon EC2 instance.
+                  The Server API is deployed to production as a Docker Container that is run in an Amazon EC2 instance.
                 </p>
               </div>
               <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
-                href="http://16.16.194.197:8000/">
+                href="#">
                 See Live
               </a>
               <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
@@ -212,7 +250,7 @@
           </div>
           <div class="col-lg-8 col-sm-12">
             <div class="project-wrapper__image load-hidden">
-              <a rel="noreferrer" href="http://16.16.194.197:8000/" target="_blank">
+              <a rel="noreferrer" href="#" target="_blank">
                 <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
                   class="thumbnail rounded js-tilt">
                   <img alt="Project Image" class="img-fluid" src="assets/nasa-project-front.png" />
